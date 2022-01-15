@@ -81,6 +81,10 @@ a {
 	align-items: center;
 }
 
+.header__logo {
+	padding-left: 20px;
+}
+
 .header__svg {
 	width: 50px;
 	height: 50px;
@@ -94,7 +98,7 @@ a {
 
 .header__wrapper {
 	display: flex;
-	min-width: 575px;
+	min-width: 560px;
 	align-items: center;
 }
 
@@ -135,7 +139,7 @@ a {
 	width: 100%;
 	max-width: 500px;
 	margin-top: 160px;
-	margin-left: 45px;
+	margin-left: 60px;
 	color: var(--white);
 }
 
@@ -175,12 +179,11 @@ a {
 
 section {
 	padding-top: 100px;
-	padding-bottom: 60px;
 }
 
 .section__title {
 	text-align: center;
-	width: 98%;
+	width: 100%;
 	overflow: hidden;
 	margin-bottom: 60px;
 }
@@ -201,7 +204,11 @@ section {
 	position: absolute;
 	border-bottom: 2px solid var(--gold);
 	top: 48%;
-	left: 333px;
+	left: 350px;
+}
+
+.section__title--portfolio h2:before {
+	width: 238px;
 }
 
 .section__title h2:after {
@@ -211,7 +218,11 @@ section {
 	position: absolute;
 	border-bottom: 2px solid var(--gold);
 	top: 48%;
-	right: 336px;
+	right: 350px;
+}
+
+.section__title--portfolio h2:after {
+	width: 238px;
 }
 
 /* Skills */
@@ -229,11 +240,11 @@ section {
 }
 
 .skills__item:first-child {
-	padding-left: 5px;
+	padding-left: 20px;
 }
 
 .skills__item:last-child {
-	padding-right: 35px;
+	padding-right: 20px;
 }
 
 .skills__icon {
@@ -251,4 +262,25 @@ section {
 	font-size: 18px;
 	line-height: 2;
 	text-align: center;
+}
+
+/* Portfolio */
+
+.portfolio--section {
+	padding-top: 110px;
+}
+
+.portfolio__switcher {
+	display: flex;
+	gap: 5px;
+	min-width: 895px;
+}
+
+.portfolio__btn {
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	line-height: 2;
+	color: var(--gold);
+	border: 2px solid var(--gold);
+	background: var(--bg-dark);
 }

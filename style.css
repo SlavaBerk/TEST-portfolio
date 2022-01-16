@@ -168,6 +168,7 @@ a {
 	background: var(--gold);
 	border: 0;
 	outline: 0;
+	cursor: pointer;
 	transition: color 0.2s linear;
 }
 
@@ -272,15 +273,132 @@ section {
 
 .portfolio__switcher {
 	display: flex;
+	justify-content: center;
 	gap: 5px;
 	min-width: 895px;
+	margin-bottom: 60px;
 }
 
-.portfolio__btn {
+.portfolio__btn button {
 	font-family: 'Inter', sans-serif;
 	font-size: 20px;
 	line-height: 2;
 	color: var(--gold);
 	border: 2px solid var(--gold);
 	background: var(--bg-dark);
+	padding: 6px 73px;
+	cursor: pointer;
+	transition: color 0.1s linear;
+}
+
+.portfolio__btn:hover button {
+	color: var(--white);
+}
+
+.portfolio__btn--active button {
+	color: var(--bg-dark);
+	background: var(--gold);
+}
+
+.portfolio__row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.portfolio__row:last-child {
+	margin-bottom: 0;
+}
+
+/* Video */
+
+.video--section {
+	padding-top: 95px;
+}
+
+.video__item {
+	position: relative;
+}
+
+.video__btn {
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.video__svg {
+	width: 130px;
+	height: 130px;
+	fill: var(--white);
+}
+
+/* Price */
+
+.price--section {
+	padding-top: 95px;
+}
+
+.price__row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.price__item {
+	min-width: 450px;
+	text-align: center;
+	border: 3px solid var(--gold);
+	padding: 23px;
+}
+
+.price__title {
+	font-family: 'Merriweather', serif;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 2;
+	margin: 18px 0;
+}
+
+.price__cost {
+	font-family: 'Merriweather', serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 2;
+	color: var(--gold);
+	margin-bottom: 20px;
+}
+
+.price__list {
+	max-width: 364px;
+	margin: 0 auto 36px;
+}
+
+.price__list ul li {
+	font-size: 17px;
+	line-height: 1.8;
+}
+
+.price__btn {
+	width: 220px;
+	margin: 0 auto;
+}
+
+.price__btn button {
+	background: var(--gold);
+	color: var(--bg-dark);
+	border: 0;
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	line-height: 2;
+	padding: 8px 39px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	transition: color 0.1s linear;
+}
+
+.price__btn:hover button {
+	color: var(--white);
 }

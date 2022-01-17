@@ -418,6 +418,8 @@ section {
 
 .wrapper--contacts {
 	background: url('assets/images/contacts-bg.jpg') center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .contacts--section {
@@ -433,7 +435,7 @@ section {
 	padding-bottom: 179px;
 }
 
-.contacts__title {
+.contacts__title h2 {
 	font-family: 'Merriweather', serif;
 	font-size: 40px;
 	font-weight: 700;
@@ -472,6 +474,7 @@ section {
 	padding-bottom: 52px;
 	padding-left: 18px;
 	margin-bottom: 30px;
+	resize: none;
 }
 
 .contacts__btn button {
@@ -500,6 +503,7 @@ section {
 .footer__inner {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .footer__github {
@@ -527,14 +531,14 @@ section {
 	color: var(--white);
 }
 
-.footer__social {
+.footer__social ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	min-width: 188px;
 }
 
-.footer__social a {
+.footer__social ul li a {
 	width: 32px;
 	height: 32px;
 	font-size: 32px;
@@ -543,6 +547,6 @@ section {
 	transition: color 0.1s linear;
 }
 
-.footer__social a:hover {
+.footer__social ul li a:hover {
 	color: var(--gold);
 }

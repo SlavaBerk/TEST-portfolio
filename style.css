@@ -133,6 +133,10 @@ textarea {
 	color: var(--gold);
 }
 
+.hamburger {
+	display: none;
+}
+
 /* Hero */
 
 .hero {
@@ -323,6 +327,10 @@ section {
 
 .video__item {
 	position: relative;
+}
+
+.hidden {
+	display: none;
 }
 
 .video__btn {
@@ -549,4 +557,296 @@ section {
 
 .footer__social ul li a:hover {
 	color: var(--gold);
+}
+
+
+/* MEDIA */
+
+@media (max-width: 768px) {
+	.container {
+		width: calc(100% - 80px);
+	}
+
+	.wrapper {
+		width: 100%;
+		height: 590px;
+		background: url('assets/images/hero-bg-smaller.jpg') center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.header .container {
+		padding-right: 25px;
+	}
+
+	.header__wrapper {
+		min-width: 500px;
+		justify-content: flex-end;
+	}
+
+	.header__languages {
+		margin-right: 20px;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.hamburger {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		user-select: none;
+		z-index: 2;
+	}
+
+	.line {
+		width: 100%;
+		height: 3px;
+		background: var(--white);
+		margin: 4px 0;
+		z-index: 5;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.hamburger.open .line1 {
+		transform: rotate(-45deg) translate(-5px, 6px);
+	}
+	  
+	.hamburger.open .line2 {
+		opacity: 0;
+	}
+	  
+	.hamburger.open .line3 {
+		transform: rotate(45deg) translate(-5px, -6px);
+	}
+
+	.hero__inner {
+		margin-top: 78px;
+		margin-left: 0;
+	}
+
+	.hero__title {
+		font-size: 32px;
+		font-weight: normal;
+		margin-bottom: 20px;
+	}
+
+	.hero__subtitle {
+		max-width: 390px;
+		line-height: 1.2;
+		margin-bottom: 59px;
+	}
+
+	section.skills {
+		padding-top: 104px;
+	}
+
+	.section__title {
+		margin-bottom: 69px;
+	}
+
+	.section__title h2 {
+		font-size: 32px;
+		line-height: 1;
+	}
+
+	.section__title h2:before {
+		width: 115px;
+		left: 390px;
+	}
+
+	.section__title h2:after {
+		width: 115px;
+		right: 390px;
+	}
+
+	.skills__row {
+		flex-wrap: wrap;
+	}
+
+	.skills__item {
+		padding-right: 13px;
+		padding-left: 10px;
+		margin-bottom: 78px;
+	}
+
+	.skills__item:first-child {
+		padding-left: 10px;
+	}
+
+	.skills__item:last-child {
+		padding-right: 14px;
+	}
+
+	.skills__icon {
+		margin-bottom: 25px;
+	}
+
+	.skills__title {
+		margin-bottom: 23px;
+	}
+
+	.skills__text {
+		line-height: 1.1;
+	}
+
+	.portfolio--section {
+		padding-top: 107px;
+	}
+
+	.section__title--portfolio {
+		margin-bottom: 74px;
+	}
+
+	.section__title--portfolio h2:before {
+		width: 88px;
+		left: 417px;
+	}
+
+	.section__title--portfolio h2:after {
+		width: 88px;
+		right: 417px;
+	}
+
+	.portfolio__switcher {
+		max-width: 445px;
+		min-width: 0;
+		flex-wrap: wrap;
+		margin: 0 auto 58px;
+	}
+
+	.portfolio__btn {
+		width: 220px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.portfolio__btn button {
+		width: 220px;
+		padding: 6px 77px;
+	}
+
+	.portfolio__row {
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 0;
+	}
+
+	.portfolio__item {
+		margin-bottom: 20px;
+	}
+
+	.video--section {
+		padding-top: 80px;
+	}
+
+	.section__title--video h2:before {
+		left: 203px;
+	}
+
+	.section__title--video h2:after {
+		right: 203px;
+	}
+
+	.visible {
+		display: none;
+	}
+
+	.hidden {
+		display: block;
+		position: relative;
+	}
+
+	.video__item {
+		margin: 0;
+		padding: 0;
+	}
+
+	.video__btn,
+	.video__svg {
+		width: 75px;
+		height: 75px;
+	}
+
+	.section__title--price {
+		margin-bottom: 73px;
+	}
+
+	.price--section {
+		padding-top: 109px;
+		padding-bottom: 27px;
+	}
+
+	.price__row {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.price__item {
+		min-width: 420px;
+		padding: 24px;
+		margin-bottom: 51px;
+	}
+
+	.price__list {
+		margin-bottom: 40px;
+	}
+
+	.price__list ul li {
+		line-height: 1.9;
+	}
+
+	.wrapper--contacts {
+		height: 600px;
+		background: url('assets/images/contacts-bg-smaller.jpg') center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.contacts__inner {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.contacts__title h2 {
+		font-size: 32px;
+	}
+
+	.footer {
+		padding: 23px 0;
+	}
+
+	.footer__inner {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.footer__github {
+		min-width: 173px;
+		line-height: 1.6;
+	}
+
+	.footer__github span {
+		margin-right: 16px;
+	}
+
+	.footer__school {
+		margin-bottom: 13px;
+	}
+
+	.footer__social {
+		max-width: 184px;
+	}
+
+	.footer__social ul li a {
+		width: 30px;
+		font-size: 30px;
+	}
 }

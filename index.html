@@ -71,6 +71,11 @@
               <div class="header__languages">
                 <span>en</span>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;ru
               </div>
+              <div class="hamburger">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -220,13 +225,13 @@
 
       <!-- Video -->
       <section class="video video--section" id="video">
-        <div class="container">
           <div class="video__inner">
-            <div class="section__title">
+            <div class="section__title  section__title--video">
               <h2>Video</h2>
             </div>
             <div class="video__item">
-              <img src="assets/images/video-pic.jpg" alt="Video" />
+              <img class="visible" src="assets/images/video-pic.jpg" alt="Video"/>
+              <img src="assets/images/video-pic-smaller.jpg" alt="Video" class="hidden">
               <button class="video__btn">
                 <svg class="video__svg">
                   <use xlink:href="#play"></use>
@@ -234,14 +239,13 @@
               </button>
             </div>
           </div>
-        </div>
       </section>
 
       <!-- Price -->
       <section class="price  price--section" id="price">
         <div class="container">
           <div class="price__inner">
-            <div class="section__title">
+            <div class="section__title  section__title--price">
               <h2>Price</h2>
             </div>
             <div class="price__row">
